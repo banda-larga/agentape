@@ -5,10 +5,10 @@ import os
 from pathlib import Path
 from typing import Any
 
-from agentape.assertions import TraceAssertions
-from agentape.cassette import Cassette
-from agentape.mock_tools import MockTool, MockToolRegistry
-from agentape.proxy import Proxy, _normalize_base_url
+from cassetteai.assertions import TraceAssertions
+from cassetteai.cassette import Cassette
+from cassetteai.mock_tools import MockTool, MockToolRegistry
+from cassetteai.proxy import Proxy, _normalize_base_url
 
 logger = logging.getLogger(__name__)
 

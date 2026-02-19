@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "agentape"
+name = "cassetteai"
 version = "0.1.0"
 description = "pytest for agents: record, replay, assert"
 readme = "README.md"
@@ -42,18 +42,18 @@ llamaindex = [
     "llama-index-llms-openai>=0.3",
 ]
 dev = [
-    "agentape[langgraph,llamaindex]",
+    "cassetteai[langgraph,llamaindex]",
     "ruff>=0.4",
     "mypy>=1.10",
 ]
-all = ["agentape[langgraph,llamaindex]"]
+all = ["cassetteai[langgraph,llamaindex]"]
 
 [project.entry-points."pytest11"]
-agentape = "agentape.plugin"
+cassetteai = "cassetteai.plugin"
 
 [project.urls]
-Homepage = "https://github.com/banda-larga/agentape"
-Repository = "https://github.com/banda-larga/agentape"
+Homepage = "https://github.com/banda-larga/cassetteai"
+Repository = "https://github.com/banda-larga/cassetteai"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
@@ -65,4 +65,4 @@ log_cli_format = "%(asctime)s %(name)s %(message)s"
 select = ["E", "F", "I", "UP", "B", "RUF"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/agentape"]
+packages = ["src/cassetteai"]

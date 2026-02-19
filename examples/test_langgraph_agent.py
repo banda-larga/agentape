@@ -7,7 +7,7 @@ import pytest
 from langchain_core.tools import tool
 from langchain_openai import ChatOpenAI
 
-from agentape import AgentTestSession
+from cassetteai import AgentTestSession
 
 warnings.filterwarnings("ignore", category=DeprecationWarning, module="langgraph")
 
